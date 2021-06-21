@@ -13,3 +13,8 @@ C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\Console
 C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ref\ConsoleApp_p2.dll
 C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.pdb
 C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.genruntimeconfig.cache
+C:\Users\Franco\Desktop\ISTEA\Estructura de Datos y Tecnologia Computacional\SegundoParcialEstructura\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.csproj.AssemblyReference.cache
+C:\Users\Franco\Desktop\ISTEA\Estructura de Datos y Tecnologia Computacional\SegundoParcialEstructura\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franco\Desktop\ISTEA\Estructura de Datos y Tecnologia Computacional\SegundoParcialEstructura\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.AssemblyInfoInputs.cache
+C:\Users\Franco\Desktop\ISTEA\Estructura de Datos y Tecnologia Computacional\SegundoParcialEstructura\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.AssemblyInfo.cs
+C:\Users\Franco\Desktop\ISTEA\Estructura de Datos y Tecnologia Computacional\SegundoParcialEstructura\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.csproj.CoreCompileInputs.cache

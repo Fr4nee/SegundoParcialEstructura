@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp_p2.Modelo
 {
     class Mensaje
     {
-        public DateTime FechaHora;
-        public string Texto;
-        public bool EsMio;
-        public bool Visto;
-        public Mensaje MensajeRespondido = null;
+        public DateTime FechaHora { get; set; }
+        public string Texto { get; set; }
+        public bool EsMio { get; set; }
+        public bool Visto { get; set; }
+        public Mensaje MensajeRespondido { get; set; }
 
         public Mensaje(string mensaje, bool esMio, bool visto)
         {

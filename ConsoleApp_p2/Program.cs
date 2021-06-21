@@ -1,9 +1,5 @@
-﻿using ConsoleApp_p2.Controller;
-using ConsoleApp_p2.Modelo;
-using System;
-using System.Collections.Generic;
-using System.Threading;
-
+﻿using System;
+using ConsoleApp_p2.Controller;
 
 namespace ConsoleApp_p2
 {
@@ -11,8 +7,8 @@ namespace ConsoleApp_p2
     {
         static void Main(string[] args)
         {
-            MessengerController messengerController = new MessengerController();
-            messengerController.Funcionar();
+            Controlador MSNapp = new Controlador();
+            MSNapp.Funcionar();
 
             Console.ReadLine();
         }
