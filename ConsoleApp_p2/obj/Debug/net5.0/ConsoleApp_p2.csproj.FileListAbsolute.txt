@@ -1,0 +1,15 @@
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\bin\Debug\net5.0\ConsoleApp_p2.exe
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\bin\Debug\net5.0\ConsoleApp_p2.deps.json
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\bin\Debug\net5.0\ConsoleApp_p2.runtimeconfig.json
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\bin\Debug\net5.0\ConsoleApp_p2.runtimeconfig.dev.json
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\bin\Debug\net5.0\ConsoleApp_p2.dll
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\bin\Debug\net5.0\ref\ConsoleApp_p2.dll
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\bin\Debug\net5.0\ConsoleApp_p2.pdb
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.AssemblyInfoInputs.cache
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.AssemblyInfo.cs
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.csproj.CoreCompileInputs.cache
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.dll
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ref\ConsoleApp_p2.dll
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.pdb
+C:\Users\Gabri\source\repos\ConsoleApp_p2\ConsoleApp_p2\obj\Debug\net5.0\ConsoleApp_p2.genruntimeconfig.cache
