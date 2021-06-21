@@ -13,11 +13,17 @@ namespace ConsoleApp_p2.Modelo
 
         public Contacto(string nombre, string info)
         {
-            if (nombre == null) throw new ArgumentException("nombre");
-            if (info == null) throw new ArgumentException("Info");
-
             this.Nombre = nombre;
             this.Info = info;
+
+            if (nombre == null)
+            {
+                throw new ArgumentException("Nombre");
+            }
+            if (info == null)
+            {
+                throw new ArgumentException("Info");
+            }
         }
 
 

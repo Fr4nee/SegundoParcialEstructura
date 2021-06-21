@@ -6,65 +6,67 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_p2.Modelo
 {
-    class MSNMessenger
-    {
-        public List<Contacto> Contacto = new List<Contacto>();
-        public List<Chat> Chat = new List<Chat>();
+	class MSNMessenger
+	{
+		public List<Contacto> Contacto = new List<Contacto>();
+		public List<Chat> Chat = new List<Chat>();
 
-        public bool AgregarContacto(Contacto nuevoContacto)
-        {
-            bool agregaContacto = true;
-            for(int i = 0; i < Contacto.Count; i++)
-            {
-                if (nuevoContacto.Nombre == Contacto[i].Nombre && nuevoContacto.Info == Contacto[i].Info)
-                {
-                    agregaContacto = false;
-                    break;
-                }
-            }
-            if(agregaContacto == true)
-            {
-                Contacto.Add(nuevoContacto);
-            }
-            return agregaContacto;
-        }
+		public bool AgregarContacto(Contacto newCont)
+		{
+			bool addCont = true;
 
-        public Chat AgregarChat(Contacto contacto)
-        {
-            foreach(Chat cha in Chat)
-            {
-                if (cha.Contacto == contacto)
-                {
-                    return cha;
-                }       
-            }
-            Chat.Add(new Chat(contacto));
-            return Chat.Last();
-        }
+			for (int i = 0; i < Contacto.Count(); i++)
+			{
+				if (newCont.Nombre == Contacto[i].Nombre && newCont.Info == Contacto[i].Info)
+				{
+					addCont = false;
+					break;
+				}
+			}
+			if (addCont == true)
+			{
+				Contacto.Add(newCont);
+			}
+			return addCont;
+		}
 
-        public void Refrescar()
-        {
-            foreach (Chat cha in Chat)
-            {
-                cha.Refrescar();
-            }  
-        }
+		public Chat AgregarChat(Contacto cont)
+		{
+			foreach (Chat chat in Chat)
+			{
+				if (chat.Contacto == cont)
+				{
+					return chat;
+				}       
+			}
+			Chat.Add(new Chat(cont));
+			return Chat.Last();
+		}
 
-        public List<Chat> BuscarChats(string terminoABuscar)
-        {
-            List<Chat> auxList = new List<Chat>();
-            foreach(Chat cha in Chat)
-            {
-                foreach(Mensaje men in cha.Mensaje)
-                {
-                    if (men.Texto.Contains(terminoABuscar))
-                    {
-                        auxList.Add(cha);
-                        break;
-                    }
-                }
-            }
-            return auxList;
-        }
-    }
+		public void Refrescar()
+		{
+			foreach (Chat item in Chat)
+			{
+				item.Refrescar();
+			}  
+		}
+
+		public List<Chat> BuscarChats(string search)
+		{
+			List<Chat> aux = new List<Chat>();
+
+			foreach (Chat chat in Chat)
+			{
+				foreach (Mensaje msj in chat.Mensaje)
+				{
+					if (msj.Texto.Contains(search))
+					{
+						aux.Add(chat);
+						break;
+					}
+				}
+			}
+			return aux;
+		}
+	}
 }

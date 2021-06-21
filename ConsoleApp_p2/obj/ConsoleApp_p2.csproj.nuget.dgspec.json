@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\New2doParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj": {}
+    "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\SegundoParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\New2doParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj": {
+    "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\SegundoParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\New2doParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj",
+        "projectUniqueName": "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\SegundoParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj",
         "projectName": "ConsoleApp_p2",
-        "projectPath": "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\New2doParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj",
+        "projectPath": "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\SegundoParcialEstructura\\ConsoleApp_p2\\ConsoleApp_p2.csproj",
         "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\New2doParcialEstructura\\ConsoleApp_p2\\obj\\",
+        "outputPath": "C:\\Users\\Franco\\Desktop\\ISTEA\\Estructura de Datos y Tecnologia Computacional\\SegundoParcialEstructura\\ConsoleApp_p2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Franco\\AppData\\Roaming\\NuGet\\NuGet.Config",

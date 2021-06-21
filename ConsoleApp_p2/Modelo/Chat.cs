@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp_p2.Modelo
 {
@@ -19,15 +17,16 @@ namespace ConsoleApp_p2.Modelo
 
         public int ContarNoLeidos(List<Mensaje> mensaje)
         {
-            int contador = 0;
-            for(int i = 0; i < Mensaje.Count; i++)
+            int v = 0;
+
+            for (int i = 0; i < Mensaje.Count(); i++)
             {
                 if (mensaje[i].EsMio == false && mensaje[i].Visto == false)
                 {
-                    contador += 1;
+                    v += 1;
                 }
             }
-            return contador;
+            return v;
         }
 
         public void Enviar(Mensaje mensaje)
@@ -45,9 +44,9 @@ namespace ConsoleApp_p2.Modelo
 
         public bool ContieneTermino(string texto)
         {
-            foreach(Mensaje mens in Mensaje)
+            foreach (Mensaje msj in Mensaje)
             {
-                if (mens.Texto.Contains(texto))
+                if (msj.Texto.Contains(texto))
                 {
                     return true;
                 }
@@ -57,11 +56,11 @@ namespace ConsoleApp_p2.Modelo
 
         public static void ActualizarVistos(List<Mensaje> mensajes)
         {
-            foreach(Mensaje men in mensajes)
+            foreach (Mensaje msj in mensajes)
             {
-                if (men.EsMio == false && men.Visto == false)
+                if (msj.EsMio == false && msj.Visto == false)
                 {
-                    men.Visto = true;
+                    msj.Visto = true;
                 }
             }
         }
@@ -69,41 +68,43 @@ namespace ConsoleApp_p2.Modelo
         public int IndexDe(Mensaje mensaje)
         {
             if (this.Mensaje.Contains(mensaje))
+            {
                 return this.Mensaje.IndexOf(mensaje);
+            }
             else
-            return -1;
+            {
+                return -1;
+            }
         }
 
         public bool Refrescar()
         {
-            int valor = Rng.Next(0, 101);
+            int val = Rng.Next(0, 100);
 
-            if(valor >= 25)
+            if (val >= 25)
             {
                 return false;
             }
 
-            foreach(Mensaje men in this.Mensaje)
+            foreach (Mensaje msj in this.Mensaje)
             {
-                if (men.EsMio == true && men.Visto == false)
+                if (msj.EsMio == true && msj.Visto == false)
                 {
-                    men.Visto = true;
-                }    
+                    msj.Visto = true;
+                }
             }
 
-            if(this.Mensaje.Count() == 0)
+            if (this.Mensaje.Count() == 0)
             {
-                this.Mensaje.Add(new Mensaje("Hola como estas", false, false));
+                this.Mensaje.Add(new Mensaje("hola, ¿como estas?", false, false));
             }
-
             else if (this.Mensaje.Last().EsMio)
             {
                 this.Mensaje.Add(new Mensaje(Mensaje.Last().Texto.ToUpper(), false, false));
             }
-
-            else if(Mensaje.Last().EsMio == false)
+            else if (Mensaje.Last().EsMio == false)
             {
-                this.Mensaje.Add(new Mensaje("Respondeme plizz", false, false));
+                this.Mensaje.Add(new Mensaje("Respondeme pliz", false, false));
             }
 
             return true;
