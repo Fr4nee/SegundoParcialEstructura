@@ -20,9 +20,9 @@ namespace ConsoleApp_p2.Modelo
         {
             int v = 0;
 
-            for (int i = 0; i < Mensaje.Count(); i++)
+            for(int i = 0; i < Mensaje.Count(); i++)
             {
-                if (mensaje[i].EsMio == false && mensaje[i].Visto == false)
+                if(mensaje[i].Visto == false && mensaje[i].EsMio == false)
                 {
                     v += 1;
                 }
@@ -32,7 +32,7 @@ namespace ConsoleApp_p2.Modelo
 
         public void Enviar(Mensaje mensaje)
         {
-            if (string.IsNullOrEmpty(mensaje.Texto.Trim()))
+            if(string.IsNullOrEmpty(mensaje.Texto.Trim()))
             {
                 throw new ArgumentException();
             }
@@ -45,7 +45,7 @@ namespace ConsoleApp_p2.Modelo
 
         public bool ContieneTermino(string texto)
         {
-            foreach (Mensaje msj in Mensaje)
+            foreach(Mensaje msj in Mensaje)
             {
                 if (msj.Texto.Contains(texto))
                 {
@@ -57,7 +57,7 @@ namespace ConsoleApp_p2.Modelo
 
         public static void ActualizarVistos(List<Mensaje> mensajes)
         {
-            foreach (Mensaje msj in mensajes)
+            foreach(Mensaje msj in mensajes)
             {
                 if (msj.EsMio == false && msj.Visto == false)
                 {
@@ -68,7 +68,7 @@ namespace ConsoleApp_p2.Modelo
 
         public int IndexDe(Mensaje mensaje)
         {
-            if (this.Mensaje.Contains(mensaje))
+            if(this.Mensaje.Contains(mensaje))
             {
                 return this.Mensaje.IndexOf(mensaje);
             }
@@ -82,32 +82,32 @@ namespace ConsoleApp_p2.Modelo
         {
             int val = Rng.Next(0, 100);
 
-            if (val >= 25)
+            if(val >= 25)
             {
                 return false;
             }
 
-            foreach (Mensaje msj in this.Mensaje)
+            foreach(Mensaje msj in this.Mensaje)
             {
                 if (msj.EsMio == true && msj.Visto == false)
                 {
                     msj.Visto = true;
+
                 }
             }
 
-            if (this.Mensaje.Count() == 0)
+            if(this.Mensaje.Count() == 0)
             {
                 this.Mensaje.Add(new Mensaje("hola, ¿como estas?", false, false));
             }
-            else if (this.Mensaje.Last().EsMio)
+            else if(this.Mensaje.Last().EsMio)
             {
                 this.Mensaje.Add(new Mensaje(Mensaje.Last().Texto.ToUpper(), false, false));
             }
-            else if (Mensaje.Last().EsMio == false)
+            else if(Mensaje.Last().EsMio == false)
             {
-                this.Mensaje.Add(new Mensaje("Respondeme pliz", false, false));
+                this.Mensaje.Add(new Mensaje("respondeme pliz", false, false));
             }
-
             return true;
         }
     }
