@@ -7,8 +7,8 @@ namespace ConsoleApp_p2.Modelo
 {
     class Chat
     {
-        public Contacto Contacto;
-        public List<Mensaje> Mensaje;
+        public Contacto Contacto { set; get; }
+        public List<Mensaje> Mensaje { set; get; } = new List<Mensaje>();
         public Random Rng = new Random();
 
         public Chat(Contacto contacto)
